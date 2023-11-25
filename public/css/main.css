@@ -1,0 +1,161 @@
+body {
+    min-height: 100vh;
+    background-color: #f2f4f7;
+    font-family: 'Mada', sans-serif;
+    color: #797979;
+    font-family: 'Changa', sans-serif;
+    padding: 0px !important;
+    margin: 0px !important;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+
+}
+
+h2 {
+    color: #fbc531;
+}
+ h3 {
+    color: #cc4158;
+ }
+
+ .clientdata,.objtdata,.transdata,.otherdata,.logout22 img {
+    width: 200px !important;
+    margin: 0 auto;
+    padding: 15px;
+}
+.clientdata {
+    position: relative;
+}
+
+.clientdata img {
+    display: block;
+    height: auto; 
+
+}
+
+.clientdata .hover-img {
+    display: none; 
+}
+
+.clientdata:hover .normal-img {
+    display: none;
+}
+
+.clientdata:hover .hover-img {
+    display: block; 
+}
+/* for object */
+.objtdata {
+    position: relative;
+}
+
+.objtdata img {
+    display: block;
+    height: auto; 
+}
+
+.objtdata .hover-img {
+    display: none;
+}
+
+.objtdata:hover .normal-img {
+    display: none; 
+}
+
+.objtdata:hover .hover-img {
+    display: block; 
+}
+/* for object */
+.transdata {
+    position: relative;
+}
+
+.transdata img {
+    display: block;
+    height: auto; 
+}
+
+.transdata .hover-img {
+    display: none;
+}
+
+.transdata:hover .normal-img {
+    display: none; 
+}
+
+.transdata:hover .hover-img {
+    display: block; 
+}
+
+/* for object */
+.otherdata {
+    position: relative;
+}
+
+.otherdata img {
+    display: block;
+    height: auto; 
+}
+
+.otherdata .hover-img {
+    display: none;
+}
+
+.otherdata:hover .normal-img {
+    display: none; 
+}
+
+.otherdata:hover .hover-img {
+    display: block; 
+}
+
+/*start register page of admin changes*/
+.register-front .register-header{
+    background-color: #84dfff;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+.bodyofreg .register-front label{
+    font-weight: bold;
+    color: black;
+}
+.register-front{
+    max-width: 700px;
+    margin: 0 auto;
+}
+/*end register page of admin changes*/
+
+/*start login page of admin changes*/
+.admin_login{
+    max-width: 700px;
+}
+.admin_login .card-body{
+    border: 1px solid #84dfff ;
+}
+.admin_login .admincard_header{
+    background-color: #84dfff;
+    color: #212529;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.admin_login .md-form {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.admin_login .admin-submit{
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+}
+/*end login page of admin changes*/
+
+
+footer {
+    background-color: #2b3035;
+    padding: 10px;
+    margin-top: 20px;
+}
