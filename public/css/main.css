@@ -141,7 +141,7 @@ h2 {
     font-size: 20px;
 }
 .admin_login .md-form {
-    color: black;
+    color: #2b3035;
     font-size: 18px;
     font-weight: bold;
 
@@ -152,6 +152,31 @@ h2 {
     font-weight: bold;
 }
 /*end login page of admin changes*/
+
+/*our objects page */
+.bg-ourapp{
+    background-color:#2b3035 !important;
+    color:#fbc531 !important;
+}
+
+.objFilter select {
+    width: 180px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+.objFilter input {
+    border-radius: 5px !important;
+    padding: 5px;
+    margin: 5px;
+}
+
+.objFilter button {
+    background-color: #2b3035;
+    border: 1px solid #fbc531;
+    margin: 5px;
+}
+
 
 
 footer {

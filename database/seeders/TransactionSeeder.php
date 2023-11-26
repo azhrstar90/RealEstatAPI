@@ -16,11 +16,12 @@ class TransactionSeeder extends Seeder
      */
     public function run(): void
     {
-        for ($i = 0; $i < 100; $i++) {
+        for ($i = 0; $i < 500; $i++) {
                 $transactionId = DB::table('transactions')->insertGetId([
-                'Transaction_ID' => rand(1000, 9999),
+                'Transaction_ID' => rand(10000, 999999),
                 'Transaction_status' => rand(0, 1) ? 'completed' : 'rejected', // Random string for transaction status
                 'Transaction_date' => now(),            // Current datetime
+                'AdminID' => 1 ,
                 'Transaction_Created' => now(),          // Current timestamp
                 'Transaction_Updated' => now(),          // Current timestamp
             ]);

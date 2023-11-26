@@ -19,7 +19,7 @@
         </div>
         <div class="col-md-6  mb-3">
             <div class="objtdata">
-                <a href="">
+                <a href="{{ route('ObjData') }}">
                     <img src="{{asset('img/obj.png')}}" class="w-100 normal-img" alt="...">
                     <img src="{{asset('img/hoverdata.png')}}" class="w-100 hover-img" alt="...">
                 </a>
