@@ -19,6 +19,12 @@ h2 {
     color: #cc4158;
  }
 
+ .addclientdata,.addtransdata {
+    width: 200px !important;
+    margin: 0 auto;
+    padding: 15px;
+
+ }
  .clientdata,.objtdata,.transdata,.otherdata,.logout22 img {
     width: 200px !important;
     margin: 0 auto;

@@ -12,4 +12,7 @@ class trans_objectModel extends Model
     protected $table = 'trnasaction_object';
 
     protected $primaryKey = 'Trans_ID';
+
 }
+
+

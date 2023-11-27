@@ -7,6 +7,8 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
+use App\Models\Transactions;
+
 
 class RealEstateObject extends Model
 {
@@ -42,4 +44,9 @@ class RealEstateObject extends Model
         return $query;
     }
 
+    // DATABASE RELATIONSHIP BETWEEN oBECTS AND TRNASACTION
+    public function transactions()
+    {
+        return $this->belongsToMany(Transactions::class, 'trnasaction_object', 'Object_ID', 'Trans_ID');
+    }
 }

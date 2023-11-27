@@ -6,8 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 use App\Models\RealEstateObject;
-use App\Models\trans_objectModel;
-
+use RealRashid\SweetAlert\Facades\Alert;
 
 class ObjectsController extends Controller
 {
@@ -44,8 +43,13 @@ class ObjectsController extends Controller
                         ->get();
         return view('objects.objectFilter', compact('ObjectsDatas'));
     }
-    
-    
+
+
+    function objWithTrans($objectId)  {
+        $ObjectsTrans = RealEstateObject::with('transactions')->findOrFail($objectId);
+        
+        return view('objects.objectTransaction', compact('ObjectsTrans'));
+    }  
 }
 
 

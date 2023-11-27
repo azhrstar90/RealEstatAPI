@@ -2,7 +2,7 @@
 @include('layouts.header')
 
 <div class="container icon-dboard text-center mt-4 mb-4">
-    <h2 class="text-center">The DataBase</h2>
+    <h2 class="text-center">THE REAL ESTATE OBJECTS</h2>
     <!-- FilterSearch Form -->
     <div class="container">
         <div class="row">
@@ -42,7 +42,7 @@
                 <th class="bg-ourapp">object_created</th>
                 <th class="bg-ourapp">object_updated</th>
                 <th class="bg-ourapp">Admin</th>
-                <th class="bg-ourapp">Our Control</th>
+                <th class="bg-ourapp">Transaction</th>
             </tr>
         </thead>
         <tbody>
@@ -56,11 +56,11 @@
                 <td>{{$ObjectsData->object_updated}}</td>
                 <td>{{$ObjectsData->userName}}</td>
                 <td>
-                    <button  class="btn btn-danger martyr_deletebtn">Delete</button>  
+                    <a href="{{route('ObjWithTran',$ObjectsData->object_ID)}}"><button class="btn btn-info">Get</button></a> 
                 </td>
             </tr>
             @endforeach          
         </tbody>
       </table>
 </div>
-
+@include('sweetalert::alert')

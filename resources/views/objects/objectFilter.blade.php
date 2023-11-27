@@ -2,7 +2,7 @@
 @include('layouts.header')
 
 <div class="container icon-dboard text-center mt-4 mb-4">
-    <h2 class="text-center">The DataBase</h2>
+    <h2 class="text-center">THE REAL ESTATE OBJECTS</h2>
     <!-- FilterSearch Form -->
     <!-- THE TABLE -->
     <table class="table table-hover">

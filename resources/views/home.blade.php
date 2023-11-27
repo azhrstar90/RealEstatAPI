@@ -10,7 +10,7 @@
         @endif
         <div class="col-md-6">
             <div class="clientdata">
-                <a href="">
+                <a href="{{ route('cleintData') }}">
                     <img src="{{asset('img/client.png')}}" class="w-100 normal-img" alt="...">
                     <img src="{{asset('img/hoverdata.png')}}" class="w-100 hover-img" alt="...">
                 </a>
@@ -28,7 +28,7 @@
         </div>
         <div class="col-md-4  mb-3">
             <div class="transdata">
-                <a href="">
+                <a href="{{ route('TransData')}}">
                     <img src="{{asset('img/trans.png')}}" class="w-100 normal-img" alt="...">
                     <img src="{{asset('img/hoverdata.png')}}" class="w-100 hover-img" alt="...">
                 </a>
@@ -37,12 +37,12 @@
         </div>
         <div class="col-md-4  mb-3">
             <div class="otherdata">
-                <a href="">
+                <a href="{{ route('othermeth') }}">
                     <img src="{{asset('img/other.png')}}" class="w-100 normal-img" alt="...">
-                    <img src="{{asset('img/hoverdata.png')}}" class="w-100 hover-img" alt="...">
+                    <img src="{{asset('img/flipother.png')}}" class="w-100 hover-img" alt="...">
                 </a>
             </div>
-            <h3 class="text-center">API METHOD</h3>
+            <h3 class="text-center">OTHER METHOD</h3>
         </div>
         <div class="col-md-4 mb-3">
             <div class="logout22">

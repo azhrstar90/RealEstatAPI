@@ -8,7 +8,7 @@
                 @if (Route::has('login'))
                 <div class="col-md-12 text-center">
                     @auth
-                    <a href="{{ url('/home') }}" class=""><button class="btn btn-info">HOME</button></a> 
+                    <a href="{{ url('/home') }}" class=""><button class="btn btn-info">DASHBOARD</button></a> 
                     @else                          
                     <h4 class="text-center mt-4"><span style="color: red">NOTE:</span>YOU NEED TO LOGIN TO HAVE ACCESS TO THE DATABASE</h4>
                     <a href="{{ route('login') }}"><button class="btn btn-info">LOGIN</button></a> 

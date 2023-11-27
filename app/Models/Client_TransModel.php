@@ -3,7 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Notifications\Notifiable;
+use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
+use App\Models\Transactions;
 
 class Client_TransModel extends Model
 {
@@ -12,4 +16,5 @@ class Client_TransModel extends Model
     protected $table = 'clienttransaction';
 
     protected $primaryKey = 'client_id';
+
 }
